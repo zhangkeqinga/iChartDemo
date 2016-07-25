@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="user-scalable=no" />
+    <title>ichartjs designer</title>
+    <script src='http://www.ichartjs.com/ichart.latest.min.js'></script>
+    <script type='text/javascript'>
+   function columnar(arrayObjs) {
+
+        winWidth = document.documentElement.clientWidth - 30;
+        winHeight = document.documentElement.clientHeight - 30;
+
+        var data1 = new Array();
+        var arrColor = new Array('#82d8ef', '#f76864', '#fedd74', '#80bd91',
+            '#fd9fc1', '#9f7961', '#cbab4f', '#fedd74', '#82d8ef', '#f76864',
+            '#80bd91', '#fd9fc1', '#fedd74', '#82d8ef', '#f76864', '#80bd91',
+            '#fd9fc1', '#82d8ef', '#f76864', '#9AFF9A', '#00EE76', '#FFBD9D',
+            '#EA7500', '#ffaad5', '#B9B9FF', '#FFE153', '#FF95CA', '#FFE66F',
+            '#CA8EFF');
+
+
+        for (var i = 0; i < arrayObjs.length-1; i++) {
+            var dic = {
+                id: i,
+                name: arrayObjs[i],
+                value: 12,
+                color: arrColor[i]
+            };
+         
+            data1[i] = dic;
+        };
+
+        var chart = iChart.create({
+            render: "ichart-render",
+            width: winWidth,
+            height: winHeight,
+            background_color: "#fefefe",
+            gradient: false,
+            color_factor: 0.2,
+            border: {
+                color: "BCBCBC",
+                width: 1
+            },
+            align: "center",
+            offsetx: 0,
+            offsety: 0,
+
+            sub_option: {
+                border: {
+                    color: "#BCBCBC",
+                    width: 1
+                },
+                label: {
+                    fontweight: 500,
+                    fontsize: 30, //柱状图文字
+                    color: "#4572a7",
+                    sign: "square",
+                    sign_size: 14,
+                    border: {
+                        color: "#BCBCBC",
+                        width: 1
+                    },
+                    background_color: "#fefefe"
+                },
+                listeners: {
+                    /**
+                     * r:iChart.Rectangle2D对象
+                     * e:eventObject对象
+                     * m:额外参数
+                     */
+                    click: function(r, e, m) {
+                        alert(r.get('id') + ' ' + r.get('name') + ' ' + r.get('value'));
+                    }
+                }
+
+            },
+            shadow: true,
+            shadow_color: "#666666",
+            shadow_blur: 2,
+            showpercent: false,
+            column_width: "70%",
+            bar_height: "70%",
+            radius: "90%",
+            border: {
+                color: "#ffffff",
+                width: 1
+            },
+            title: {
+                text: "利用ichartjs制作漂亮图表",
+                color: "#111111",
+                fontsize: 40, //标题
+                font: "微软雅黑",
+                textAlign: "center",
+                height: 30,
+                offsetx: 0,
+                offsety: 0
+            },
+            coordinate: {
+                width: "80%",
+                height: "84%",
+                background_color: "#ffffff",
+                axis: {
+                    color: "#a5acb8",
+                    width: [1, "", 1, ""]
+                },
+                grid_color: "#d9d9d9",
+                label: {
+                    fontweight: 500,
+                    color: "#666666",
+                    fontsize: 30 //y轴文字
+                },
+                scale: [{
+                    position: 'left',
+                    start_scale: 0,
+                    end_scale: 10,
+                    scale_space: 10
+                }]
+            },
+            label: {
+                fontweight: 500,
+                color: "#666666",
+                enabled: true,
+                rotation: -90,
+                fontsize: 11 //x轴文字
+
+            },
+
+            type: "column2d",
+            data: data1
+        });
+
+        chart.draw();
+    };
+
+    </script>
+</head>
+
+<body style='background-color:#ffffff'>
+    <div id='ichart-render'></div>
+</body>
+
+</html>

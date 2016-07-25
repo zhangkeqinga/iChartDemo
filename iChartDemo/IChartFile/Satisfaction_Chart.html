@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>天跃科技</title>
+<script type="text/javascript" src="ichart-1.0.js"></script>
+<script type="text/javascript">
+			$(function(){
+
+				winHeight = document.documentElement.clientHeight;
+				winWidth = document.documentElement.clientWidth;
+
+				var data = [
+				        	{name : 'HTML5 ',value : 30,color:'#fedd74'},
+				        	{name : 'JavaScript    ',value : 25,color:'#82d8ef'},
+				        	{name : 'Java',value : 15,color:'#f76864'},
+				        	{name : 'XML',value : 20,color:'#80bd91'},
+				        	{name : 'PhotoShop',value : 10,color:'#fd9fc1'}
+			        	];
+
+				var chart = new iChart.Donut2D({
+						render : 'canvasDiv',
+
+						center:{
+								shadow:true,
+								shadow_offsetx:10,
+								shadow_offsety:15,
+								shadow_blur:2,
+								shadow_color:'#E40014',
+								color:'#E40014'
+						},
+
+						data: data,
+						offsetx:-winWidth/7,
+						shadow:true,
+						background_color:'#FFFFFF',
+						separate_angle:1,//分离角度
+
+						tip:{
+							enable:true,
+							showType:'fixed'
+						},
+
+						legend : {
+							enable : true,
+							shadow:true,
+							background_color:null,
+							border:false,
+							legend_space:30, //图例间距
+							line_height:30, //设置行高
+							sign_space:10, //小图标与文本间距
+							sign_size:15, //小图标大小
+							color:'#6f6f6f', //文字颜色
+							fontsize:15 //文本大小
+
+						},
+
+						sub_option:{
+							label:false,
+							color_factor : 0.3
+ 
+						},
+
+						showpercent:true,
+						decimalsnum:2,
+						width : winWidth,
+						height : winHeight,
+						radius: winHeight/3
+
+				});
+
+				chart.draw();
+			});
+
+</script>
+</head>
+<body>
+<div id='canvasDiv'>
+</div>
+</body>
+</html>

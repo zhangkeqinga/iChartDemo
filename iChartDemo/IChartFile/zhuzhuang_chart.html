@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>纬视瑞</title>
+    <script type="text/javascript" src="ichart-1.0.js"></script>
+    <p id="demo"></p>
+    <script type="text/javascript">
+    function triple(arrayObjs, intValue) {
+
+        winHeight = document.documentElement.clientHeight - 20;
+        winWidth = document.documentElement.clientWidth - 20;
+
+        /*
+        var data = [
+                    {id:1 ,name : 'Android',value : 52.5,color:'#4572a7'},
+                    {id:2 ,name : 'IOS',value : 34.3,color:'#aa4643'},
+                    {id:3 ,name : 'RIM',value : 8.4,color:'#89a54e'},
+                    {id:4 ,name : 'Microsoft',value : 3.6,color:'#80699b'},
+                    {id:5 ,name : 'Other',value : 1.2,color:'#3d96ae'}
+                    ];
+        */
+
+
+        var data = new Array();
+        var arrColor = new Array('#82d8ef', '#f76864', '#fedd74', '#80bd91', '#fd9fc1', '#9f7961', '#cbab4f', '#fedd74', '#82d8ef', '#f76864', '#80bd91', '#fd9fc1', '#fedd74', '#82d8ef', '#f76864', '#80bd91', '#fd9fc1');
+
+
+        for (var i = 0; i < arrayObjs.length; i++) {
+            var dic = {
+                id: i,
+                name: arrayObjs[i],
+                value: intValue[i],
+                color: arrColor[i]
+            };
+            data[i] = dic;
+        }
+
+
+        var chart = new iChart.Donut2D({
+
+            render: 'canvasDiv',
+            data: data,
+
+            footnote: {
+                text: '',
+                color: '#486c8f',
+                fontsize: 30,
+                padding: '0 38'
+            },
+
+            border: {
+                color: '#ffffff',
+                width: 1
+            },
+
+            sub_option: {
+                mini_label_threshold_angle: 40, //迷你label的阀值,单位:角度
+                mini_label: { //迷你label配置项
+                    fontsize: 40,
+                    fontweight: 300,
+                    color: '#ffffff'
+                },
+
+
+                label: {
+                    background_color: null,
+                    sign: false, //设置禁用label的小图标
+                    padding: '0 4',
+                    border: {
+                        enable: false,
+                        color: '#666666'
+                    },
+
+
+                    fontsize: 32,
+                    fontweight: 300,
+                    color: '#4572a7'
+                },
+
+                border: {
+                    width: 1,
+                    color: '#ffffff'
+                },
+
+
+                listeners: {
+                    parseText: function(d, t) {
+                        return d.get('value') + "%";
+                        //自定义label文本
+                    },
+
+                    // click 事件
+                    click: function informationNext(r, e, p) {
+                        console.log(r.expanded);
+                        if (r.expanded) {
+
+                            document.getElementById("demo").innerHTML = jsFunc(r, e, p);
+                        }
+
+                    }
+
+                }
+
+            },
+
+
+
+            legend: {
+                enable: true,
+                padding: 0,
+                offsetx: winWidth * 3 / 4,
+                offsety: 0,
+                color: '#3e576f',
+                fontsize: 35, //文本大小
+                sign_size: 40, //小图标大小
+                line_height: 35, //设置行高
+                sign_space: 15, //小图标与文本间距
+                border: false,
+                align: 'left',
+                background_color: null //透明背景
+            },
+
+            shadow: true,
+            shadow_blur: 3,
+            shadow_color: '#aaaaaa',
+            shadow_offsetx: -winWidth * 5 / 7,
+            shadow_offsety: 0,
+            background_color: '#f1f1f1',
+            align: 'right', //右对齐
+            offsetx: -winWidth * 1 / 3, //设置向x轴负方向偏移位置60px
+            offset_angle: -135, //逆时针偏移120度
+            width: winWidth,
+            height: winHeight,
+            radius: winHeight / 3
+        });
+
+
+        chart.draw();
+
+    };
+    </script>
+    <script type="text/javascript">
+    function jsFunc(r, e, p) {
+
+
+        var id = r.get('id');
+        var src = "ios://jwzhangjie"
+        var str = src + id
+
+        var iFrame;
+        iFrame = document.createElement("iframe");
+        iFrame.setAttribute("src", str);
+        iFrame.setAttribute("style", "display:none;");
+        iFrame.setAttribute("height", "0px");
+        iFrame.setAttribute("width", "0px");
+        iFrame.setAttribute("frameborder", "0");
+        document.body.appendChild(iFrame);
+
+        // 发起请求后这个iFrame就没用了，所以把它从dom上移除掉
+
+        // alert('id: ' + r.get('id') + '\nname: ' + r.get('name') +' \n值: '+r.get('value') + ' \n状态:' + (r.expanded ? '即将收起':'即将弹出'));
+    }
+
+    var jsParamFunc = function(argument) {
+        document.getElementById('jsParamFuncSpan').innerHTML = argument['name'];
+    }
+
+    var jsFunc1 = function myFunction() {
+        alert("Hello World!");
+    }
+    </script>
+</head>
+
+<body>
+    <div id='canvasDiv'></div>
+</body>
+
+</html>

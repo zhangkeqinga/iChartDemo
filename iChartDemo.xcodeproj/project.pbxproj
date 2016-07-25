@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0458A1EC1D46462200511945 /* COView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1EB1D46462200511945 /* COView.swift */; };
+		0458A1EE1D46465400511945 /* ColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1ED1D46465400511945 /* ColorDefine.swift */; };
+		0458A2001D46476700511945 /* NSArray+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F21D46476700511945 /* NSArray+CO.swift */; };
+		0458A2011D46476700511945 /* NSData+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F31D46476700511945 /* NSData+CO.swift */; };
+		0458A2021D46476700511945 /* NSDate+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F41D46476700511945 /* NSDate+CO.swift */; };
+		0458A2031D46476700511945 /* NSObject+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F51D46476700511945 /* NSObject+CO.swift */; };
+		0458A2041D46476700511945 /* NSString+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F61D46476700511945 /* NSString+CO.swift */; };
+		0458A2051D46476700511945 /* String+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F71D46476700511945 /* String+CO.swift */; };
+		0458A2071D46476700511945 /* UIColor+CO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458A1F91D46476700511945 /* UIColor+CO.swift */; };
 		04C2278F1D45A2B300793B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C2278E1D45A2B300793B18 /* AppDelegate.swift */; };
 		04C227911D45A2B300793B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C227901D45A2B300793B18 /* ViewController.swift */; };
 		04C227941D45A2B300793B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C227921D45A2B300793B18 /* Main.storyboard */; };
 		04C227961D45A2B300793B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C227951D45A2B300793B18 /* Assets.xcassets */; };
 		04C227991D45A2B300793B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C227971D45A2B300793B18 /* LaunchScreen.storyboard */; };
+		04C227A91D45A3CB00793B18 /* ColumnerWeb.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A11D45A3CB00793B18 /* ColumnerWeb.html */; };
+		04C227AA1D45A3CB00793B18 /* ColumnerWeb副本.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A21D45A3CB00793B18 /* ColumnerWeb副本.html */; };
+		04C227AB1D45A3CB00793B18 /* ichart-1.0.js in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A31D45A3CB00793B18 /* ichart-1.0.js */; };
+		04C227AC1D45A3CB00793B18 /* ichart.1.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A41D45A3CB00793B18 /* ichart.1.2.min.js */; };
+		04C227AD1D45A3CB00793B18 /* iChart.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A51D45A3CB00793B18 /* iChart.html */; };
+		04C227AE1D45A3CB00793B18 /* Satisfaction_Chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A61D45A3CB00793B18 /* Satisfaction_Chart.html */; };
+		04C227AF1D45A3CB00793B18 /* statistic_chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A71D45A3CB00793B18 /* statistic_chart.html */; };
+		04C227B01D45A3CB00793B18 /* zhuzhuang_chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 04C227A81D45A3CB00793B18 /* zhuzhuang_chart.html */; };
+		04C227B31D45A50000793B18 /* EZChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C227B11D45A50000793B18 /* EZChart.swift */; };
+		04C227B41D45A50000793B18 /* EZChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C227B21D45A50000793B18 /* EZChartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0458A1EB1D46462200511945 /* COView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COView.swift; sourceTree = "<group>"; };
+		0458A1ED1D46465400511945 /* ColorDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefine.swift; sourceTree = "<group>"; };
+		0458A1F21D46476700511945 /* NSArray+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSArray+CO.swift"; sourceTree = "<group>"; };
+		0458A1F31D46476700511945 /* NSData+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+CO.swift"; sourceTree = "<group>"; };
+		0458A1F41D46476700511945 /* NSDate+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+CO.swift"; sourceTree = "<group>"; };
+		0458A1F51D46476700511945 /* NSObject+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+CO.swift"; sourceTree = "<group>"; };
+		0458A1F61D46476700511945 /* NSString+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+CO.swift"; sourceTree = "<group>"; };
+		0458A1F71D46476700511945 /* String+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CO.swift"; sourceTree = "<group>"; };
+		0458A1F91D46476700511945 /* UIColor+CO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CO.swift"; sourceTree = "<group>"; };
 		04C2278B1D45A2B300793B18 /* iChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C2278E1D45A2B300793B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C227901D45A2B300793B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +50,16 @@
 		04C227951D45A2B300793B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C227981D45A2B300793B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C2279A1D45A2B300793B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C227A11D45A3CB00793B18 /* ColumnerWeb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ColumnerWeb.html; sourceTree = "<group>"; };
+		04C227A21D45A3CB00793B18 /* ColumnerWeb副本.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ColumnerWeb副本.html"; sourceTree = "<group>"; };
+		04C227A31D45A3CB00793B18 /* ichart-1.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ichart-1.0.js"; sourceTree = "<group>"; };
+		04C227A41D45A3CB00793B18 /* ichart.1.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ichart.1.2.min.js; sourceTree = "<group>"; };
+		04C227A51D45A3CB00793B18 /* iChart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iChart.html; sourceTree = "<group>"; };
+		04C227A61D45A3CB00793B18 /* Satisfaction_Chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Satisfaction_Chart.html; sourceTree = "<group>"; };
+		04C227A71D45A3CB00793B18 /* statistic_chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = statistic_chart.html; sourceTree = "<group>"; };
+		04C227A81D45A3CB00793B18 /* zhuzhuang_chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zhuzhuang_chart.html; sourceTree = "<group>"; };
+		04C227B11D45A50000793B18 /* EZChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZChart.swift; sourceTree = "<group>"; };
+		04C227B21D45A50000793B18 /* EZChartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZChartModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0458A1F11D46476700511945 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0458A1F21D46476700511945 /* NSArray+CO.swift */,
+				0458A1F31D46476700511945 /* NSData+CO.swift */,
+				0458A1F41D46476700511945 /* NSDate+CO.swift */,
+				0458A1F51D46476700511945 /* NSObject+CO.swift */,
+				0458A1F61D46476700511945 /* NSString+CO.swift */,
+				0458A1F71D46476700511945 /* String+CO.swift */,
+				0458A1F91D46476700511945 /* UIColor+CO.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		04C227821D45A2B300793B18 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +106,35 @@
 		04C2278D1D45A2B300793B18 /* iChartDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04C227A01D45A3CB00793B18 /* IChartFile */,
 				04C2278E1D45A2B300793B18 /* AppDelegate.swift */,
+				0458A1F11D46476700511945 /* Extension */,
 				04C227901D45A2B300793B18 /* ViewController.swift */,
+				0458A1ED1D46465400511945 /* ColorDefine.swift */,
+				04C227B11D45A50000793B18 /* EZChart.swift */,
+				04C227B21D45A50000793B18 /* EZChartModel.swift */,
 				04C227921D45A2B300793B18 /* Main.storyboard */,
+				0458A1EB1D46462200511945 /* COView.swift */,
 				04C227951D45A2B300793B18 /* Assets.xcassets */,
 				04C227971D45A2B300793B18 /* LaunchScreen.storyboard */,
 				04C2279A1D45A2B300793B18 /* Info.plist */,
 			);
 			path = iChartDemo;
+			sourceTree = "<group>";
+		};
+		04C227A01D45A3CB00793B18 /* IChartFile */ = {
+			isa = PBXGroup;
+			children = (
+				04C227A11D45A3CB00793B18 /* ColumnerWeb.html */,
+				04C227A21D45A3CB00793B18 /* ColumnerWeb副本.html */,
+				04C227A31D45A3CB00793B18 /* ichart-1.0.js */,
+				04C227A41D45A3CB00793B18 /* ichart.1.2.min.js */,
+				04C227A51D45A3CB00793B18 /* iChart.html */,
+				04C227A61D45A3CB00793B18 /* Satisfaction_Chart.html */,
+				04C227A71D45A3CB00793B18 /* statistic_chart.html */,
+				04C227A81D45A3CB00793B18 /* zhuzhuang_chart.html */,
+			);
+			path = IChartFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +195,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C227B01D45A3CB00793B18 /* zhuzhuang_chart.html in Resources */,
 				04C227991D45A2B300793B18 /* LaunchScreen.storyboard in Resources */,
+				04C227AD1D45A3CB00793B18 /* iChart.html in Resources */,
+				04C227AB1D45A3CB00793B18 /* ichart-1.0.js in Resources */,
 				04C227961D45A2B300793B18 /* Assets.xcassets in Resources */,
+				04C227AC1D45A3CB00793B18 /* ichart.1.2.min.js in Resources */,
+				04C227A91D45A3CB00793B18 /* ColumnerWeb.html in Resources */,
+				04C227AE1D45A3CB00793B18 /* Satisfaction_Chart.html in Resources */,
+				04C227AA1D45A3CB00793B18 /* ColumnerWeb副本.html in Resources */,
+				04C227AF1D45A3CB00793B18 /* statistic_chart.html in Resources */,
 				04C227941D45A2B300793B18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0458A2001D46476700511945 /* NSArray+CO.swift in Sources */,
+				0458A2011D46476700511945 /* NSData+CO.swift in Sources */,
+				04C227B31D45A50000793B18 /* EZChart.swift in Sources */,
+				0458A2031D46476700511945 /* NSObject+CO.swift in Sources */,
+				0458A2071D46476700511945 /* UIColor+CO.swift in Sources */,
+				0458A2051D46476700511945 /* String+CO.swift in Sources */,
 				04C227911D45A2B300793B18 /* ViewController.swift in Sources */,
+				0458A2041D46476700511945 /* NSString+CO.swift in Sources */,
+				0458A2021D46476700511945 /* NSDate+CO.swift in Sources */,
+				0458A1EE1D46465400511945 /* ColorDefine.swift in Sources */,
 				04C2278F1D45A2B300793B18 /* AppDelegate.swift in Sources */,
+				0458A1EC1D46462200511945 /* COView.swift in Sources */,
+				04C227B41D45A50000793B18 /* EZChartModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +378,7 @@
 				04C2279F1D45A2B300793B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
