@@ -16,6 +16,10 @@ class ViewController: UIViewController,UIWebViewDelegate {
         let v = EZChart()
         v.frame = CGRectMake(0, 0, 320, 400)
         v.test()
+        v.clickedButtonAction =  {(model)->Void in
+            
+            print("model.ez_xtitle \(model.ez_xtitle)")
+        }
         
         self.view.addSubview(v)
         

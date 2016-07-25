@@ -27,8 +27,10 @@ class EZChart: UIView {
     var titleLb:UILabel!
     
     var dataArray:[EZChartModel] = []
-    
-    
+    var model: EZChartModel?
+
+    var clickedButtonAction:((model:EZChartModel)->(Void))?
+
     
     func test(){
         
@@ -217,7 +219,13 @@ class EZChart: UIView {
     
     func onClickChartInfomation(sender:UIButton){
         
+        if sender.tag - 1000 >= 0 {
+            model = self.dataArray[sender.tag - 1000]
+            clickedButtonAction!(model:model!)
+        }
+        
     }
+
     
     
     /**
